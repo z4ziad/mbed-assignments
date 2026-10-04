@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+.AppleDouble
+._*
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Arduino / build output
+build/
+*.bin
+*.elf
+*.hex
+*.uf2
+
+# Datasets and models (share via Edge Impulse or a download link, not Git)
+data/
+datasets/
+*.zip
+*.tar.gz
+*.npy
+*.npz
+*.h5
+*.tflite
+*.eim
