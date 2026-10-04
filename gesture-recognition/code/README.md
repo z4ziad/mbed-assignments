@@ -1,1 +1,1 @@
-Starter code for this assignment goes here.
+Code relevant to the Gesture Recognition Assignment will be posted here.
