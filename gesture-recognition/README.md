@@ -6,6 +6,11 @@ In this assignment, we want to classify the motion of three forearm gestures, na
 * Jab/punch forward — large linear acceleration along one axis with little rotation (an impulse gesture and a nice contrast class to the twist).  
   
 **Important Note:** To make it easier for the deep learning model to classify the gestures and to make our first assignment simpler and more likely to succeed, let's agree to collect data only from the <u>*right forearm*.</u> 
+
+Here is a stick figure illustration of the three gestures:
+![stick figures](./images/gesture-demo.gif)
+
+
 ## Learning objectives 
 
 By the end of this assignment, you will have learned the following:
