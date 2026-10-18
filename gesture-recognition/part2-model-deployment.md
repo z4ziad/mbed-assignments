@@ -154,20 +154,21 @@ Record the results as an on-device confusion table (gesture performed × label r
 
 - [ ] Edge Impulse project link (public, or shared with the instructor)
 - [ ] Your modified sketch folder, zipped (`<AndrewID>_motion_classification_continuous.zip`)
-- [ ] Short report (_max pages_) containing:
+- [ ] Short report (max 2 pages) containing:
   - impulse settings and anything you changed from the defaults, with its effect
   - test accuracy and confusion matrix from Edge Impulse
   - the on-device confusion table from Task 5, with your explanation of the gap
   - how your sketch achieves continuous inference, in your own words
   - which AI tools you used, for what, and what you changed in their output
-- [ ] Demo video (≤ 1 minute) showing the serial monitor while you perform the three gestures
+- [ ] Demo video (≤ 2 minute without cuts) showing the serial monitor while you perform the three gestures. The video should show successful classification of at least **three** tries in row for each class.  
 
 ## Grading rubric
 
 | Criterion | Points |
 |-----------|--------|
 | Model performance (test accuracy, confusion matrix) | 5 |
-| Meets device constraints | 5 |
+| Meets device constraints | 2 |
 | Working continuous deployment (gyro fix, sliding window, voting) | 5 |
-| On-device evaluation and report | 5 |
+| On-device evaluation (three successful tries in a row per class) | 5 |
+| Report | 3 |
 | Total | **20** |
