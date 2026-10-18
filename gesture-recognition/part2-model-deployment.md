@@ -1,6 +1,6 @@
 # Assignment 1 — Part 2: Model Development and Deployment
 
-**Due:** _date_ · **Points:** _xx_
+**Due:** October 23 · **Points:** 20
 
 ## Goal
 
