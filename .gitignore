@@ -31,3 +31,4 @@ datasets/
 *.h5
 *.tflite
 *.eim
+!gesture-recognition/dataset/*.zip
