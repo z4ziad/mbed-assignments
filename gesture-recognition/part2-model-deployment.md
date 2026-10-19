@@ -44,7 +44,7 @@ Edge Impulse trains on exactly these windows. From a sample of length $L$ it cut
 
 $$N_w = \left\lfloor \frac{L - W}{S} \right\rfloor + 1$$
 
-windows, starting at $0, S, 2S, \ldots$ For a 2-second gesture sample: $\lfloor (2.0 - 1.5)/0.25 \rfloor + 1 = 3$ windows, at offsets 0, 0.25 and 0.5 s. Because the padding on each side (0.5 s) equals the slack, **all three contain the complete gesture**, just at different positions. That is the point of the padding: the model learns to recognize the gesture early, centered, and late in the window, which is what it will meet on the device. Padding more than the slack would have produced windows with partial gestures labeled as full ones.
+windows, starting at $0, S, 2S, \ldots$ For a 2-second gesture sample: $\lfloor (2.0 - 1.5)/0.25 \rfloor + 1 = 3$ windows, at offsets 0, 0.25 and 0.5 s. Because the padding on each side (0.5 s) equals the slack, **all three contain the complete gesture**, just at different positions. That is the point of the padding: the model learns to recognize the gesture early, centered, and late in the window, which is what it will meet on the device. Padding more than the slack would have produced windows with partial gestures labeled as full ones. The diagram bellow illustrates the window size and stride to capture the gesture completely three times.![window_sample_diagram](./images/windows-2s-sample.png)
 
 For a 60-second idle stream the same formula gives $\lfloor 58.5/0.25 \rfloor + 1 = 235$ windows, which is how the stream lengths were chosen to balance the classes.
 
