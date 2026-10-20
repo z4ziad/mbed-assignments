@@ -27,7 +27,7 @@ By the end of this assignment, you will have learned the following:
 | Part | What you do | Due |
 |------|-------------|-----|
 | [Part 1: Data collection](part1-data-collection.md) | Each student generates and lables their own motion data using Edge Impulse | Friday, Oct.9th. |
-| [Part 2: Model and deployment](part2-model-deployment.md) | TEache student develops their own model and feature extractions, test the model accuracy before and after deployment | Friday Oct. 17th. |
+| [Part 2: Model and deployment](part2-model-deployment.md) | Eache student develops their own model and feature extractions, test the model accuracy before and after deployment | Friday Oct. 23d |
 
 ## Background
 
