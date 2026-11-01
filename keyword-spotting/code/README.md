@@ -17,8 +17,8 @@ Things to know about it:
   new slice of audio arrives. The number of slices per window comes from
   `EI_CLASSIFIER_SLICES_PER_MODEL_WINDOW` (4 by default; override it with a
   `#define` placed before the `#include`).
-- It prints all class scores once per window. Extra credit B asks you to
+- It prints all class scores once per window. The assignment asks you to
   report only the keywords, each with its own threshold, and to fix how the
-  microphone callback fills the slice buffers. See `model-deployment.md`.
+  microphone callback fills the slice buffers. See [model-deployment.md](model-deployment.md).
 
 The example is published by Edge Impulse under the Apache 2.0 license.
