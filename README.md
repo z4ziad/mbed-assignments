@@ -15,7 +15,7 @@ Generally, each assignment has two parts. In **Part 1** you collect data and sub
 | # | Topic | Part 1 due | Part 2 due |
 |---|-------|-----------|-----------|
 | 1 | [Gesture Recognition](gesture-recognition/README.md) | Oct. 5th | Oct. 17th |
-| 2 | Keyword Spotting | TBD.|TBD.|
+| 2 | [Keyword Spotting](keyword-spotting/README.md) | N/A |Nov. 6th|
 | 3 | Object Detection | TBD.|TBD.|
 | 4 | Multimodal Application | TBD. | TBD. |
 
