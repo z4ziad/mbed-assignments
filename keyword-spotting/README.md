@@ -23,7 +23,7 @@ By the end of this assignment, you will have learned the following:
 
 | Part | What you do | Due |
 |------|-------------|-----|
-| [Model and deployment](model-deployment.md) | Build the impulse, train and test the model in Edge Impulse, deploy it to the Nicla Vision, and evaluate it live | Wed. Nov. 4th at Midnight |
+| [Model and deployment](model-deployment.md) | Build the impulse, train and test the model in Edge Impulse, deploy it to the Nicla Vision, and evaluate it live | Fri. Nov. 6th at Midnight |
 
 ## Background
 
