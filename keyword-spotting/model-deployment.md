@@ -143,7 +143,7 @@ Do the required tasks above first.
 
 The baseline network has about 1,400 trainable parameters. If your training accuracy came out *at or below* your validation accuracy (typically both around 85%), the model is **underfitting**: it is too small even to memorize its own training data, and no amount of extra data will help. (Training accuracy is measured with dropout and augmentation active, so a model that fits well shows training accuracy a few points *above* validation.)
 
-Grow the network until the **test accuracy** (Task 2, step 4) exceeds **90%** while staying inside the device limits of Task 3. Reasonable moves, in order:
+Grow the network until the **test accuracy** (Task 2, step 4) exceeds **89%** while staying inside the device limits of Task 3. Reasonable moves, in order:
 
 - more filters in the two convolution layers (16 and 32 instead of 8 and 16);
 - a third 1D conv/pool layer (64 filters); do not add a fourth, since each pooling halves the 30-frame time axis and four would leave only two steps;
@@ -152,7 +152,7 @@ Grow the network until the **test accuracy** (Task 2, step 4) exceeds **90%** wh
 
 Watch for the opposite failure as you grow: when training accuracy climbs more than about ten points above validation, the model has started to memorize, and the remedy is more dropout or a smaller dense layer, not more convolution filters.
 
-Tune using the **validation** numbers only. Run Model testing on the shared test set once at the end; a test set used to choose the architecture no longer measures anything, and because every student tests on the same clips, the 90% threshold means the same thing for everyone. In your report, include the architecture, parameter count, quantized model size and latency from Studio, and training, validation, and test accuracy for both the baseline and the final model.
+Tune using the **validation** numbers only. Run Model testing on the shared test set once at the end; a test set used to choose the architecture no longer measures anything, and because every student tests on the same clips, the 89% threshold means the same thing for everyone. In your report, include the architecture, parameter count, quantized model size and latency from Studio, and training, validation, and test accuracy for both the baseline and the final model.
 
 ### B. An improved deployment sketch
 
@@ -212,7 +212,7 @@ You are encouraged, and for this task expected, to use an agentic AI coding tool
 | Working deployment and on-device evaluation | 5 |
 | Report | 5 |
 | Answer to conceptual question | 2 |
-| Design of larger classifier with test accuracy above 90% | 3 |
+| Design of larger classifier with test accuracy above 89% | 3 |
 | Improved sketch (keyword-only output with per-class thresholds, lossless buffering, explicit stride) and AI-tool log | 3 |
 | Add a separate control loop on the M4 core to flash the LED twice per color. | 2 |
 | **Total** | **40** |
