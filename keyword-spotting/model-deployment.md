@@ -86,7 +86,7 @@ In the **MFCC** block, start from these parameters, then click **Autotune parame
 
 You may change these; record what you tried and what it changed in the feature explorer and in the accuracy. Do not change or increase the window size, since the deployment steps assume 600 ms.
 
-In the **Classifier** block, use the default architecture (two 1D convolution/pooling layers with 8 and 16 filters, dropout, and a dense output) as your baseline. Turn on Data augmentation. Keep the defaults for training cycles and learning rate for the first run.
+In the **Classifier** block, use the default architecture (two 1D convolution/pooling layers with 8 and 16 filters, dropout, and a dense output) as your baseline. **Don' turn on data augmentation,** as I already mixed noise with the samples. Keep the defaults for training cycles and learning rate for the first run.
 
 ### 2. Train and evaluate
 
@@ -141,7 +141,7 @@ Do the required tasks above first.
 
 ### A. A larger classifier with test accuracy above 90%
 
-The baseline network has about 1,400 trainable parameters. If your training accuracy came out *at or below* your validation accuracy (typically both around 85%), the model is **underfitting**: it is too small even to memorize its own training data, and no amount of extra data will help. (Training accuracy is measured with dropout and augmentation active, so a model that fits well shows training accuracy a few points *above* validation.)
+The baseline network has about 1,400 trainable parameters. If your training accuracy came out *at or below* your validation accuracy (typically both around 85%), the model is **underfitting**: it is too small even to memorize its own training data, and no amount of extra data will help. (Training accuracy is measured with dropout, so a model that fits well shows training accuracy a few points *above* validation.)
 
 Grow the network until the **test accuracy** (Task 2, step 4) exceeds **89%** while staying inside the device limits of Task 3. Reasonable moves, in order:
 
