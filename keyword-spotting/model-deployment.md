@@ -92,7 +92,7 @@ In the **Classifier** block, use the default architecture (two 1D convolution/po
 
 1. Do **not** use *Perform train/test split* on the Dashboard: the test set is the provided `testing/` folder, shared by the whole class. During training, Studio automatically sets aside a validation portion of the training bin (20% by default); that is the set you use to compare your experiments.
 2. Generate features and look at the feature explorer: are the five classes separable? Which pairs overlap?
-3. Train the classifier. Report the training accuracy, the validation accuracy and the validation confusion matrix. Note whether training accuracy is above or below validation accuracy and what that tells you (see Extra credit A).
+3. Train the classifier. Report the training accuracy, the validation accuracy and the validation confusion matrix. Note whether training accuracy is above or below validation accuracy and what that tells you.
 4. When you are done experimenting, run **Model testing** on the test set. Report the test accuracy and confusion matrix, per class. This is the number that matters; validation accuracy during training is optimistic, and the test clips were never seen in training.
 
 ### 3. Fit the device
@@ -105,7 +105,7 @@ Edge Impulse estimates on-device cost for the Cortex-M7 target (select *Arduino 
 | Flash | ≤ 500 kB | The Arduino build gets about 1.4 MB of the internal 2 MB |
 | DSP + inference time | ≤ 100 ms | The deployed sketch classifies every 200 ms and must never fall behind the microphone |
 
-Report the estimates for your final model. The baseline model is about 12 kB and runs in well under a millisecond; it is far inside these limits, which is a hint for Extra credit A.
+Report the estimates for your final model. The baseline model is about 12 kB and runs in well under a millisecond.
 
 ### 4. Deploy
 
@@ -191,7 +191,7 @@ You are encouraged, and for this task expected, to use an agentic AI coding tool
 ## Deliverables
 
 - [ ] Edge Impulse project link (public, or shared with the instructor)
-- [ ] Your sketch folder, zipped (`<AndrewID>_nicla_vision_microphone_continuous.zip`); the stock sketch with the include matching your library is acceptable for the required part; the improved sketch for Extra credit B
+- [ ] Your sketch folder, zipped (`<AndrewID>_nicla_vision_microphone_continuous.zip`); the stock sketch with the include matching your library is acceptable for the required part;
 - [ ] Short report (max two pages) containing:
   - impulse and MFCC settings, anything you changed from the defaults, and its effect
   - training, validation, and test accuracy and the test confusion matrix from Edge Impulse
