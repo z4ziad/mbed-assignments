@@ -148,8 +148,7 @@ Per-frame counts flicker: a candy at the edge of a cell is detected in one frame
 | Meets device constraints; frame rate measured | 5 |
 | M7 sketch: per-class counting with thresholds, per-frame output, counts sent over RPC | 2 |
 | M4 sketch: stability rule and LED display as specified | 3 |
-| Live counting test and explanation | 3 |
+| Live counting test and explanation | 5 |
 | Report and AI-tool log | 2 |
-| Extra credit A: orange and brown | 2 |
 | Extra credit B: median filter on the M4 | 3 |
 | **Total**   | **40**  |
